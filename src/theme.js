@@ -1,5 +1,6 @@
-const scheme = require('./scheme');
-const chroma = require('chroma-js');
+// @ts-check
+const scheme = require("./scheme");
+const chroma = require("chroma-js");
 
 /**
  * Generates a monochrome theme.
@@ -27,6 +28,6 @@ const theme = ({ name, background, foreground, override, amplifier }) => {
  *
  * @param {*} color background color.
  */
-const type = (color) => (chroma(color).luminance() > 0.5 ? 'light' : 'dark');
+const type = (color) => (chroma(color).luminance() > 0.5 ? "light" : "dark");
 
 module.exports = theme;

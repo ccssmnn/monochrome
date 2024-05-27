@@ -1,46 +1,66 @@
-const theme = require('./theme');
+const theme = require("./theme");
 
 // Pre-defined monochrome themes.
 const themes = [
   theme({
-    name: 'monochrome-dark',
-    background: '#101010',
-    foreground: '#EBEBEB',
+    name: "monochrome-dark-slate",
+    background: "#0f172a",
+    foreground: "#f1f5f9",
+    amplifier: 2.0,
   }),
   theme({
-    name: 'monochrome-light',
-    background: '#EBEBEB',
-    foreground: '#101010',
+    name: "monochrome-light-slate",
+    background: "#f1f5f9",
+    foreground: "#0f172a",
+    amplifier: 2.0,
   }),
   theme({
-    name: 'monochrome-dark-subtle',
-    background: '#0A1219',
-    foreground: '#F1F5F9',
+    name: "monochrome-dark-gray",
+    background: "#111827",
+    foreground: "#f3f4f6",
+    amplifier: 2.0,
   }),
   theme({
-    name: 'monochrome-light-subtle',
-    background: '#F1F5F9',
-    foreground: '#0A1219',
+    name: "monochrome-light-gray",
+    background: "#f3f4f6",
+    foreground: "#111827",
+    amplifier: 2.0,
   }),
   theme({
-    name: 'monochrome-dark-amplified',
-    background: '#000000',
-    foreground: '#FFFFFF',
+    name: "monochrome-dark-zinc",
+    background: "#18181b",
+    foreground: "#f4f4f5",
+    amplifier: 2.0,
   }),
   theme({
-    name: 'monochrome-light-amplified',
-    background: '#FFFFFF',
-    foreground: '#000000',
+    name: "monochrome-light-zinc",
+    background: "#f4f4f5",
+    foreground: "#18181b",
+    amplifier: 2.0,
   }),
   theme({
-    name: 'monochrome-dark-cool-gray',
-    background: '#111827',
-    foreground: '#F9FAFB',
+    name: "monochrome-dark-neutral",
+    background: "#171717",
+    foreground: "#f5f5f5",
+    amplifier: 2.0,
   }),
   theme({
-    name: 'monochrome-light-cool-gray',
-    background: '#F9FAFB',
-    foreground: '#111827',
+    name: "monochrome-light-neutral",
+    background: "#f5f5f5",
+    foreground: "#171717",
+    amplifier: 2.0,
+  }),
+  theme({
+    name: "monochrome-dark-stone",
+    background: "#1c1917",
+    foreground: "#f5f5f4",
+    amplifier: 2.0,
+  }),
+  theme({
+    name: "monochrome-light-stone",
+    background: "#f5f5f4",
+    foreground: "#1c1917",
+    amplifier: 2.0,
   }),
 ];
 

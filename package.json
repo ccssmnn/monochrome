@@ -1,9 +1,9 @@
 {
-  "name": "monochrome",
-  "displayName": "Monochrome",
-  "description": "Monochromatic theme collection, for those who seeks.",
-  "publisher": "anotherglitchinthematrix",
-  "version": "2.4.3",
+  "name": "monochrome-tailwind-colors",
+  "displayName": "Monochrome - Tailwind CSS",
+  "description": "Monochromatic readable theme collection based on Tailwind CSS grays",
+  "publisher": "ccssmnn",
+  "version": "1.0.0",
   "license": "MIT",
   "icon": "icon.png",
   "galleryBanner": {
@@ -11,15 +11,15 @@
     "theme": "dark"
   },
   "author": {
-    "name": "Ali Can YILDIZ",
-    "email": "anotherglitchinthematrix@gmail.com"
+    "name": "Carl Assmann",
+    "email": "assmann@hey.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anotherglitchinthematrix/monochrome.git"
+    "url": "https://github.com/ccssmnn/monochrome.git"
   },
   "bugs": {
-    "url": "https://github.com/anotherglitchinthematrix/monochrome/issues"
+    "url": "https://github.com/ccssmnn/monochrome/issues"
   },
   "engines": {
     "vscode": "^1.43.0"
@@ -34,49 +34,54 @@
     "monochrome",
     "minimal",
     "minimalist",
-    "subtle"
+    "tailwindcss",
+    "slate",
+    "stone",
+    "zinc",
+    "neutral",
+    "gray"
   ],
   "contributes": {
     "themes": [
       {
-        "label": "Monochrome Dark",
+        "label": "Monochrome Stone Dark",
         "uiTheme": "vs-dark",
-        "path": "./theme/monochrome-dark.json"
+        "path": "./theme/monochrome-dark-stone.json"
       },
       {
-        "label": "Monochrome Light",
+        "label": "Monochrome Stone Light",
         "uiTheme": "vs",
-        "path": "./theme/monochrome-light.json"
+        "path": "./theme/monochrome-light-stone.json"
       },
       {
-        "label": "Monochrome Dark Subtle",
+        "label": "Monochrome Neutral Dark",
         "uiTheme": "vs-dark",
-        "path": "./theme/monochrome-dark-subtle.json"
+        "path": "./theme/monochrome-dark-neutral.json"
       },
       {
-        "label": "Monochrome Light Subtle",
+        "label": "Monochrome Neutral Light",
         "uiTheme": "vs",
-        "path": "./theme/monochrome-light-subtle.json"
+        "path": "./theme/monochrome-light-neutral.json"
       },
       {
-        "label": "Monochrome Dark Amplified",
+        "label": "Monochrome Zinc Dark",
         "uiTheme": "vs-dark",
-        "path": "./theme/monochrome-dark-amplified.json"
+        "path": "./theme/monochrome-dark-zinc.json"
       },
       {
-        "label": "Monochrome Light Amplified",
+        "label": "Monochrome Zinc Light",
         "uiTheme": "vs",
-        "path": "./theme/monochrome-light-amplified.json"
+        "path": "./theme/monochrome-light-zinc.json"
       },
       {
-        "label": "Monochrome Dark Cool Gray",
+        "label": "Monochrome Gray Dark",
         "uiTheme": "vs-dark",
-        "path": "./theme/monochrome-dark-cool-gray.json"
+        "path": "./theme/monochrome-dark-gray.json"
       },
       {
-        "label": "Monochrome Light Cool Gray",
+        "label": "Monochrome Gray Light",
         "uiTheme": "vs",
-        "path": "./theme/monochrome-light-cool-gray.json"
+        "path": "./theme/monochrome-light-gray.json"
       }
     ]
   },

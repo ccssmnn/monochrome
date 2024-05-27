@@ -1,8 +1,8 @@
-const merge = require('lodash.merge');
-const chroma = require('chroma-js');
-const transform = require('./transform');
-const base = require('./base');
-const exceptions = require('./exceptions');
+const merge = require("lodash.merge");
+const chroma = require("chroma-js");
+const transform = require("./transform");
+const base = require("./base");
+const exceptions = require("./exceptions");
 
 /**
  * Generates a monochrome color scheme.
@@ -47,7 +47,7 @@ const scheme = ({ background, foreground, override, amplifier }) => {
  * @param {*} _ Discarded key.
  * @param {*} v Value.
  */
-const test = (_, v) => typeof v === 'number';
+const test = (_, v) => typeof v === "number";
 
 /**
  * Modifies the transparency value by the given factor.
@@ -105,16 +105,16 @@ const RGB = (b, f, v) => chroma.scale([b, f])(v);
  */
 const warningScheme = (color) => {
   // Calculate the error color.
-  const error = chroma.scale([color, 'red']).mode('lab')(0.75).hex();
+  const error = chroma.scale([color, "red"]).mode("lab")(0.75).hex();
 
   // Calculate the warning color.
-  const warning = chroma.scale([color, 'orange']).mode('lab')(0.75).hex();
+  const warning = chroma.scale([color, "orange"]).mode("lab")(0.75).hex();
 
   return {
     colors: {
-      'listFilterWidget.noMatchesOutline': error,
-      'list.errorForeground': error,
-      'list.warningForeground': warning,
+      "listFilterWidget.noMatchesOutline": error,
+      "list.errorForeground": error,
+      "list.warningForeground": warning,
     },
   };
 };
